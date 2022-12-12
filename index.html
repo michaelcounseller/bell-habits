@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/bulma/css/bulma.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Bell Trainer</title>
+  </head>
+  <body>
+    <div id="body">
+      <section id="header" class="hero has-background-grey-darker">
+        <header class="hero-body">
+          <h1 class="title is-3 has-text-light">Bell Trainer</h1>
+          <h2 class="subtitle is-size-6 pl-1 has-text-light is-underlined">
+            Train your habits with Bell Trainer
+          </h2>
+          <ul id="habit-input-list">
+            <li>
+              <div class="field has-text-white mb-3">
+                <label class="label has-text-white has-text-weight-normal"
+                  >Habit</label
+                >
+                <div class="control">
+                  <input
+                    type="text"
+                    name="habit"
+                    class="input habit-input"
+                    placeholder="Enter your Habit"
+                  />
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="field px-2">
+                <label class="label has-text-white has-text-weight-normal"
+                  >Sound</label
+                >
+                <div class="control">
+                  <div class="select">
+                    <select id="sound" name="sound">
+                      <option>Bell</option>
+                      <option>Bamboo</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="field px-2">
+                <label class="label has-text-white has-text-weight-normal"
+                  >Intervals</label
+                >
+                <div class="control">
+                  <div class="select">
+                    <select id="intervals" name="intervals">
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                      <option>7</option>
+                      <option>8</option>
+                      <option>9</option>
+                      <option>10</option>
+                      <option>11</option>
+                      <option>12</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <button
+                id="add-habit"
+                class="button is-primary is-light has-text-blue is-rounded is-focused"
+              >
+                Add Habit
+              </button>
+            </li>
+          </ul>
+        </header>
+      </section>
+
+      <section id="notif-section" class="section">
+        <div class="container">
+          <div class="columns has-text-left">
+            <div class="column column-container has-background-grey-light">
+              <h2
+                class="notif-list-title subtitle has-text-white has-background-grey-darker p-2"
+              >
+                Notifications
+              </h2>
+              <ul id="first-column">
+              </ul>
+            </div>
+      </section>
+    </div>
+  </body>
+  <script src="./assets/js/time.js"></script>
+</html>
