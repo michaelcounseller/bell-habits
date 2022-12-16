@@ -6,32 +6,36 @@
   border-bottom: 7px solid #00d1b2;
 }
 
-#exercise-input-list li {
+#habit-input-list li {
   display: inline-block;
-}
-
-.column {
-  margin-bottom: 4rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
 }
 
 .column-container {
   border: 2px solid #00d1b2;
 }
 
-.exercise-list-title {
+.notif-list-title {
   border-bottom: 2px solid #00d1b2;
 }
 
-.exercise-task {
+.habit-task {
+  width: 300px;
   margin-bottom: 1rem;
   border-radius: 5px;
   border: 1px solid #00d1b2;
 }
 
-.status-select {
+
+#first-column {
   display: flex;
-  width: 9.5rem;
-  font-size: 18px;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
+
+@media screen and (max-width: 419px){
+  .status-select {
+    width: 100px;
+    font-size: 15px;
+  }
+}
+
