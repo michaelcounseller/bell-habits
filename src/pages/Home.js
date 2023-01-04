@@ -1,8 +1,7 @@
 import "../../node_modules/bulma/css/bulma.css";
 
-export default function Home({ habitObj }) {
-  let habitArr = []
-  habitArr.push(habitObj)
+export default function Home({ habitArr }) {
+
   return (
     <>
       <section id="kanban-section" className="section">
@@ -12,11 +11,14 @@ export default function Home({ habitObj }) {
           </h2>
           <ul id="first-column">
             {habitArr.map((habits) => (
-              <>
-                <li key={habits.id}>
+              <div key={habits.id}>
+               
+                <li >
                   <h1>{habits.id}</h1>
+                  <h1>{habits.name}</h1>
+                  <h1>{habits.interval}</h1>
                 </li>
-              </>
+              </div>
             ))}
           </ul>
         </div>
